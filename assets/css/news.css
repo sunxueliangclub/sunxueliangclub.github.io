@@ -1,0 +1,196 @@
+/* Page-specific styles extracted from News.html. */
+main.news-page {
+      width: 1300px;
+      margin: 0 auto;
+      padding: 15px 0 64px;
+
+      --primary: #92071c;        /* 主题酒红 */
+      --primary-hover: #b30922;
+      --accent: #fdb837;         /* 金色 */
+      --surface: #ffffff;
+      --text: #333333;
+    }
+
+    main.news-page .newsbox {
+      background-color: var(--surface);
+      border: 1px solid rgba(0,0,0,0.03);
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.04);
+      padding: 50px 60px 40px;
+    }
+
+    /* 页面头部样式美化 */
+    main.news-page .page-header {
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid rgba(0,0,0,0.04);
+    }
+    main.news-page .page-title {
+      font-size: 36px;
+      color: var(--primary);
+      margin: 0 0 10px 0;
+      font-family: var(--font-heading, sans-serif);
+      letter-spacing: 0.5px;
+    }
+    main.news-page .page-subtitle {
+      font-size: 16px;
+      color: #666;
+      margin: 0;
+    }
+
+    /* 2. 年份与字体强化：视觉冲击力 */
+    main.news-page .year-title {
+      position: relative;
+      display: inline-block;
+      font-size: 32px;
+      font-weight: 900;
+      color: var(--primary);
+      margin: 40px 0 20px 5px;
+      padding-bottom: 8px;
+      letter-spacing: 1px;
+    }
+
+    main.news-page .news-list {
+      list-style: none;
+      margin: 0 0 10px 5px;
+      padding: 0 0 0 30px;
+      border-left: 2.5px solid rgba(146, 7, 28, 0.15); /* 淡酒红细线 */
+      border-top: 3px solid var(--accent);
+    }
+
+    main.news-page .news-item {
+      position: relative;
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: 18px;
+      padding: 18px 18px;
+      margin-bottom: 8px;
+      border-radius: 12px;
+      transition: background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* 时间轴节点 (小空心圆) */
+    main.news-page .news-item::before {
+      content: '';
+      position: absolute;
+      left: -37.5px; /* 精准定位到左侧直线上: 30(padding) + 2(border) + offsets */
+      top: 25px;   /* 与第一行文字视觉居中对齐 */
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--surface);
+      border: 2px solid var(--primary);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 2;
+    }
+
+    /* 4. 悬停交互动画 (高级质感) */
+    main.news-page .news-item:hover {
+      background-color: rgba(146, 7, 28, 0.03); /* 极淡酒红背景 */
+    }
+
+    /* 节点“点亮”特效 */
+    main.news-page .news-item:hover::before {
+      background: var(--primary);
+      transform: scale(1.3);
+      box-shadow: 0 0 12px rgba(146, 7, 28, 0.3);
+    }
+
+    /* 内部元素结构保护与丝滑平移 */
+    main.news-page .news-item .date,
+    main.news-page .news-item .news-text {
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    main.news-page .news-item:hover .date,
+    main.news-page .news-item:hover .news-text {
+      transform: translateX(6px); /* 丝滑向右微移 */
+    }
+
+    /* 字体排版优化 */
+    main.news-page .news-item .date {
+      font-variant-numeric: tabular-nums;
+      color: var(--primary);
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 1.7;
+      padding-top: 1px;
+    }
+
+    main.news-page .news-text {
+      display: block; /* 保证容器撑满，方便底部标签换行 */
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.8;
+      font-weight: 500;
+    }
+
+    /* 期刊 <em> 标签酒红高亮显示 */
+    main.news-page .news-text em {
+      color: var(--primary);
+      font-style: italic;
+      font-weight: 800;
+    }
+
+    /* ==========================================
+       【核心升级】精美外链胶囊标签 (Mini Action Pills)
+       ========================================== */
+    main.news-page .news-tag-container {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+
+    main.news-page .news-tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 14px;
+      border-radius: 50px; /* 胶囊形 */
+      background-color: rgba(146, 7, 28, 0.07); /* 极浅酒红背景 */
+      color: var(--primary) !important;
+      font-size: 13px;
+      font-weight: 800;
+      text-decoration: none !important;
+      border: 1px solid transparent !important;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* 右侧箭头的专属过渡动画 */
+    main.news-page .news-tag .arrow {
+      display: inline-block;
+      margin-left: 5px;
+      font-size: 14px;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* 胶囊悬停微交互：变色 + 箭头右上弹跳 */
+    main.news-page .news-tag:hover {
+      background-color: var(--primary);
+      color: #ffffff !important;
+      box-shadow: 0 4px 12px rgba(146, 7, 28, 0.25);
+    }
+    main.news-page .news-tag:hover .arrow {
+      transform: translate(3px, -3px);
+    }
+
+    /* 保护普通 a 标签的样式（排除胶囊标签） */
+    main.news-page .newsbox a:not(.news-tag) {
+      color: var(--primary);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(146, 7, 28, 0.3);
+      transition: all 0.3s ease;
+    }
+    main.news-page .newsbox a:not(.news-tag):hover { 
+      color: var(--primary-hover);
+      border-bottom-color: var(--primary-hover);
+    } 
+    /* Responsive 响应式适配 */
+    @media (max-width: 1320px) {
+      main.news-page { width: calc(100% - 36px); }
+    }
+    @media (max-width: 900px) {
+      main.news-page .newsbox { padding: 30px 20px; }
+      main.news-page .news-list { margin-left: 5px; padding-left: 20px; }
+      main.news-page .news-item { grid-template-columns: 1fr; gap: 8px; padding: 16px; }
+      main.news-page .news-item::before { left: -27px; top: 22px; }
+    }

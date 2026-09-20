@@ -1,0 +1,351 @@
+/* Page-specific styles extracted from Opening.html. */
+/* ===============================
+       Openings page (scoped)
+       =============================== */
+    main.open-page{
+      width: 1300px;
+      margin: 0 auto;
+      padding: 15px 0 64px;
+
+      --op-surface: var(--surface);
+      --op-text: var(--text);
+      --op-muted: var(--muted);
+      --op-primary: var(--primary);
+      --op-primary-600: var(--primary-600);
+      --op-accent: var(--accent);
+
+      --op-body: #2b2f36;
+      --op-body-muted: rgba(43,47,54,0.72);
+
+      --op-radius: 16px; /* 【升级】16px 高级圆角 */
+      --op-h1: 36px;
+      --op-h2: 22px;
+      --op-h3: 18px; /* 【升级】副标题放大 */
+      --op-p: 16px;
+      --op-lh: 1.8;  /* 【升级】增加行高，提升呼吸感 */
+    }
+
+    @media (max-width: 1320px){
+      main.open-page{ width: calc(100% - 36px); }
+    }
+    @media (max-width: 900px){
+      main.open-page{ --op-h1: 30px; }
+    }
+
+    /* Two-column shell */
+    main.open-page .open-shell{
+      display: grid;
+      grid-template-columns: 1fr 260px; /* 右侧目录稍微加宽，更显从容 */
+      gap: 30px; /* 拉开正文与目录的间距 */
+      align-items: start;
+    }
+
+    main.open-page .open-main{
+      min-width: 0;
+    }
+
+    main.open-page .open-aside{
+      position: sticky;
+      top: 30px; 
+      align-self: start;
+      max-height: calc(100vh - 40px);
+      overflow: auto;
+      padding-right: 5px; 
+    }
+
+    @media (max-width: 980px){
+      main.open-page .open-shell{
+        grid-template-columns: 1fr;
+      }
+      main.open-page .open-aside{
+        position: relative;
+        top: auto;
+        max-height: none;
+        overflow: visible;
+      }
+    }
+
+    /* ===============================
+       【核心升级 1】卡片与阴影 & 悬浮上浮
+       =============================== */
+    main.open-page .hero,
+    main.open-page .card {
+      background: var(--op-surface);
+      border: 1px solid rgba(0,0,0,0.03); /* 极弱边框 */
+      border-radius: var(--op-radius);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04); /* 极度柔和的弥散阴影 */
+      padding: 40px 45px; /* 【升级】大幅增加内留白，提升呼吸感 */
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+      margin-bottom: 24px;
+    }
+
+    main.open-page .hero:hover,
+    main.open-page .card:hover {
+      transform: translateY(-5px); /* 【升级】悬停时微微上浮 */
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08); /* 悬停阴影加深 */
+    }
+
+    @media (max-width: 900px){
+      main.open-page .hero,
+      main.open-page .card { padding: 25px 20px; }
+    }
+
+    main.open-page .kicker{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      font-size:14px;
+      font-weight: 800;
+      letter-spacing:1px;
+      text-transform:uppercase;
+      color: var(--op-primary);
+      margin:0 0 12px;
+    }
+    main.open-page .kicker::before{
+      content:"";
+      width:10px;height:10px;border-radius:999px;
+      background: var(--op-accent);
+      box-shadow: 0 0 0 3px rgba(253,184,55,0.25);
+    }
+
+    main.open-page h1{
+      margin:0;
+      font-size: var(--op-h1);
+      line-height:1.2;
+      font-family: var(--font-heading);
+      letter-spacing:0.2px;
+      color: var(--op-primary-600);
+    }
+
+    main.open-page .lead{
+      margin:16px 0 0;
+      font-size: 17px; /* 引言放大 */
+      line-height: var(--op-lh);
+      color: #444;
+    }
+
+    /* ===============================
+       【核心升级 3】字体层级美化
+       =============================== */
+    main.open-page .card-header{
+      display:flex;
+      align-items:baseline;
+      justify-content:space-between;
+      gap:14px;
+      padding-bottom:12px;
+      margin-bottom:20px;
+      border-bottom: 3px solid var(--accent); /* 保留金色下划线，稍微加粗 */
+    }
+
+    main.open-page h2{
+      margin:0;
+      font-size: var(--op-h2);
+      font-family: var(--font-heading);
+      letter-spacing:0.5px;
+      color: var(--op-primary-600);
+      font-weight: 900;
+    }
+
+    /* H3 醒目侧边竖线设计 */
+    main.open-page h3{
+      margin: 32px 0 16px;
+      font-size: var(--op-h3);
+      font-family: var(--font-heading);
+      color: var(--op-primary-600);
+      font-weight: 800;
+      padding-left: 14px;
+      border-left: 5px solid var(--op-primary); /* 【升级】酒红色竖线 */
+      background: linear-gradient(90deg, rgba(146,7,28,0.05) 0%, rgba(255,255,255,0) 100%); /* 渐变底色衬托 */
+      padding-top: 4px;
+      padding-bottom: 4px;
+    }
+
+    main.open-page p{
+      margin:12px 0 0;
+      font-size: var(--op-p);
+      line-height: var(--op-lh);
+      color: var(--op-body);
+    }
+
+    main.open-page strong{
+      color: var(--op-primary);
+      font-weight: 800;
+    }
+
+    /* ===============================
+       【核心升级 2】列表美化 (酒红数字 / 金色对勾)
+       =============================== */
+    main.open-page .card ol,
+    main.open-page .card ul {
+      margin: 16px 0 20px;
+      padding-left: 0;
+      font-size: var(--op-p);
+      line-height: var(--op-lh);
+      color: var(--op-body);
+      list-style: none; /* 移除默认圆点 */
+    }
+    
+    /* 有序列表 (ol)：酒红数字标注 */
+    main.open-page .card ol {
+      counter-reset: custom-counter;
+    }
+    main.open-page .card ol li {
+      position: relative;
+      padding-left: 32px;
+      margin: 12px 0;
+      counter-increment: custom-counter;
+    }
+    main.open-page .card ol li::before {
+      content: counter(custom-counter) ".";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--op-primary); /* 酒红色数字 */
+      font-weight: 900;
+      font-size: 17px;
+    }
+
+    /* 无序列表 (ul)：精致金色对勾 */
+    main.open-page .card ul li {
+      position: relative;
+      padding-left: 28px;
+      margin: 12px 0;
+    }
+    main.open-page .card ul li::before {
+      content: "✔";
+      position: absolute;
+      left: 2px;
+      top: 0;
+      color: var(--op-accent); /* 金色小对勾 */
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    /* ===============================
+       提示框与通用链接
+       =============================== */
+    main.open-page .callout{
+      margin-top: 20px;
+      border-left: 4px solid var(--op-accent);
+      background: rgba(253,184,55,0.10);
+      border-radius: 12px;
+      padding: 18px 24px;
+    }
+    main.open-page .callout p{ margin:0; }
+
+    main.open-page a{
+      color: var(--op-primary);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(146,7,28,0.3);
+      transition: all 0.3s ease;
+    }
+    main.open-page a:hover{
+      color: var(--op-primary-600);
+      border-bottom-color: var(--op-primary-600);
+    }
+
+    /* ===============================
+       【核心升级 4】右侧目录 (苹果玻璃拟态)
+       =============================== */
+    main.open-page .toc{
+      padding: 24px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.55); 
+      -webkit-backdrop-filter: blur(20px);
+      backdrop-filter: blur(20px); 
+      border: 1px solid rgba(255,255,255,0.8); 
+      box-shadow: 0 10px 40px rgba(0,0,0,0.05); 
+    }
+
+    main.open-page .toc-title{
+      margin: 0 0 16px;
+      font-size: 14px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      color: var(--op-primary); /* 标题变酒红 */
+      font-family: var(--font-heading);
+    }
+
+    main.open-page .toc ol{
+      margin: 0;
+      padding-left: 0;
+      list-style: none;
+    }
+    main.open-page .toc li{
+      margin: 12px 0;
+    }
+
+    main.open-page .toc a{
+      display: inline-block;
+      color: #555;
+      font-size: 15px;
+      font-weight: 500;
+      text-decoration: none;
+      border-bottom: none; /* 目录去线化 */
+      transition: all 0.3s ease;
+    }
+    main.open-page .toc a:hover{
+      color: var(--op-primary); /* 【升级】悬停变主题色 */
+      transform: translateX(6px); /* 悬停平滑向右浮动 */
+    }
+
+    main.open-page .open-aside::-webkit-scrollbar{ width: 6px; }
+    main.open-page .open-aside::-webkit-scrollbar-thumb{
+      background: rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    @media (max-width: 980px){
+      main.open-page .toc{
+        background: rgba(255,255,255,0.9);
+      }
+    }
+
+    /* ===============================
+       【核心升级 5】终极召唤 CTA卡片 (六、应聘方式)
+       =============================== */
+    #sec6 {
+      background: linear-gradient(135deg, rgba(146, 7, 28, 0.04) 0%, rgba(253, 184, 55, 0.04) 100%); /* 【升级】极浅酒红+金渐变底色 */
+      border: 1px solid rgba(146, 7, 28, 0.1);
+    }
+    #sec6 .card-header {
+      border-bottom-color: var(--op-primary); /* 下划线也换成酒红更显郑重 */
+    }
+    
+    /* 现代胶囊按钮 */
+    .cta-email-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--op-primary);
+      color: #ffffff !important;
+      padding: 14px 36px;
+      border-radius: 50px; /* 胶囊形状 */
+      font-size: 20px;
+      font-weight: 900;
+      letter-spacing: 0.5px;
+      text-decoration: none !important;
+      border: none !important;
+      box-shadow: 0 8px 20px rgba(146, 7, 28, 0.25);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      margin-top: 15px;
+    }
+    .cta-email-btn:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 15px 30px rgba(146, 7, 28, 0.35);
+      color: #ffffff !important;
+    }
+    .cta-email-btn::before {
+      content: "✉"; /* 邮件小图标 */
+      font-size: 24px;
+    }
+
+    /* 重新排版的联系容器 */
+    main.open-page .contact-box {
+      margin-top: 30px;
+      padding: 30px;
+      text-align: center;
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    }

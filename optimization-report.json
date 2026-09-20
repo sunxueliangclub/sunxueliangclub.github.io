@@ -1,0 +1,165 @@
+{
+  "strategy": {
+    "shared_css": "assets/css/common.css",
+    "page_css": [
+      "news.css",
+      "opening.css",
+      "people.css",
+      "photos.css",
+      "publications.css",
+      "research.css"
+    ],
+    "shared_js": "assets/js/site.js",
+    "page_js": [
+      "home.js",
+      "photos.js",
+      "publications.js"
+    ],
+    "removed_browser_extension_artifacts": true,
+    "removed_duplicate_style_css_copies": 7
+  },
+  "extracted": {
+    "Home.html": {
+      "inline_style_count_before": 6,
+      "inline_style_chars_before": 116190,
+      "inline_script_count_before": 1,
+      "inline_script_chars_before": 1376,
+      "page_css_chars": 0,
+      "page_js_chars": 1369
+    },
+    "News.html": {
+      "inline_style_count_before": 2,
+      "inline_style_chars_before": 86002,
+      "inline_script_count_before": 0,
+      "inline_script_chars_before": 0,
+      "page_css_chars": 5427,
+      "page_js_chars": 0
+    },
+    "Research.html": {
+      "inline_style_count_before": 2,
+      "inline_style_chars_before": 83317,
+      "inline_script_count_before": 1,
+      "inline_script_chars_before": 268,
+      "page_css_chars": 2742,
+      "page_js_chars": 0
+    },
+    "Publications.html": {
+      "inline_style_count_before": 2,
+      "inline_style_chars_before": 87044,
+      "inline_script_count_before": 1,
+      "inline_script_chars_before": 45855,
+      "page_css_chars": 6469,
+      "page_js_chars": 45848
+    },
+    "People.html": {
+      "inline_style_count_before": 7,
+      "inline_style_chars_before": 117015,
+      "inline_script_count_before": 0,
+      "inline_script_chars_before": 0,
+      "page_css_chars": 821,
+      "page_js_chars": 0
+    },
+    "Photos.html": {
+      "inline_style_count_before": 2,
+      "inline_style_chars_before": 87557,
+      "inline_script_count_before": 1,
+      "inline_script_chars_before": 2646,
+      "page_css_chars": 6982,
+      "page_js_chars": 2639
+    },
+    "Opening.html": {
+      "inline_style_count_before": 2,
+      "inline_style_chars_before": 89763,
+      "inline_script_count_before": 1,
+      "inline_script_chars_before": 388,
+      "page_css_chars": 9188,
+      "page_js_chars": 0
+    }
+  },
+  "validation": {
+    "missing_html_local_references": [],
+    "missing_css_local_references": [],
+    "inline_style_tags_remaining": {
+      "Home.html": 0,
+      "News.html": 0,
+      "Research.html": 0,
+      "Publications.html": 0,
+      "People.html": 0,
+      "Photos.html": 0,
+      "Opening.html": 0
+    },
+    "inline_script_tags_remaining": {
+      "Home.html": 0,
+      "News.html": 0,
+      "Research.html": 0,
+      "Publications.html": 0,
+      "People.html": 0,
+      "Photos.html": 0,
+      "Opening.html": 0
+    },
+    "js_syntax": {
+      "photos.js": {
+        "ok": true,
+        "stderr": ""
+      },
+      "site.js": {
+        "ok": true,
+        "stderr": ""
+      },
+      "publications.js": {
+        "ok": true,
+        "stderr": ""
+      },
+      "home.js": {
+        "ok": true,
+        "stderr": ""
+      }
+    },
+    "relative_css_urls": {
+      "photos.css": [],
+      "news.css": [],
+      "opening.css": [],
+      "common.css": [
+        "../image/groupleader.jpg"
+      ],
+      "people.css": [],
+      "publications.css": [],
+      "research.css": []
+    }
+  },
+  "optimized_sizes_bytes": {
+    "seven_html_pages": 187190,
+    "css": 52255,
+    "js": 51420
+  },
+  "size_comparison": {
+    "previous_version_bytes": {
+      "html": 944976,
+      "css": 131054,
+      "js": 0
+    },
+    "optimized_version_bytes": {
+      "html": 187190,
+      "css": 52255,
+      "js": 51420
+    },
+    "text_payload_reduction": {
+      "before_bytes": 1076030,
+      "after_bytes": 290865,
+      "saved_bytes": 785165,
+      "saved_percent": 73.0
+    }
+  },
+  "runtime_smoke_test_summary": {
+    "all_pages_no_page_errors": true,
+    "home_slider_ok": true,
+    "publications_search_ok": true,
+    "photos_lightbox_ok": true
+  },
+  "publications_data_separation": {
+    "records": 68,
+    "data_file": "assets/data/publications-data.js",
+    "renderer_file": "assets/js/publications.js",
+    "maintenance_guide": "assets/data/README-publications.txt"
+  }
+}

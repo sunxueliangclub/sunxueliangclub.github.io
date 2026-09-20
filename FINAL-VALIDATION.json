@@ -1,0 +1,112 @@
+{
+  "baselineCounts": {
+    "home_highlights": 5,
+    "home_news": 58,
+    "news_items": 65,
+    "news_years": 4,
+    "research_topics": 3,
+    "photo_sections": 3,
+    "photo_cards": 18,
+    "people_groups": 5,
+    "people_blocks": 12,
+    "opening_blocks": 7
+  },
+  "javascriptSyntaxFailures": [],
+  "missingHtmlLocalReferences": [],
+  "missingCssLocalReferences": [],
+  "missingDataAssetReferences": [],
+  "browser": {
+    "pages": {
+      "Home.html": {
+        "errors": [],
+        "scriptOrder": [
+          "./assets/js/site.js",
+          "./assets/data/home-highlights-data.js",
+          "./assets/data/home-news-data.js",
+          "./assets/js/home-content.js",
+          "./assets/js/home.js"
+        ],
+        "navLinks": 7,
+        "highlights": 5,
+        "homeNews": 58
+      },
+      "News.html": {
+        "errors": [],
+        "scriptOrder": [
+          "./assets/js/site.js",
+          "./assets/data/news-data.js",
+          "./assets/js/news-content.js"
+        ],
+        "navLinks": 7,
+        "items": 65,
+        "years": 4
+      },
+      "Research.html": {
+        "errors": [],
+        "scriptOrder": [
+          "./assets/js/site.js",
+          "./assets/data/research-data.js",
+          "./assets/js/research-content.js"
+        ],
+        "navLinks": 7,
+        "topics": 3
+      },
+      "Publications.html": {
+        "errors": [],
+        "scriptOrder": [
+          "./assets/js/site.js",
+          "./assets/data/publications-data.js",
+          "./assets/js/publications.js"
+        ],
+        "navLinks": 7,
+        "items": 68
+      },
+      "People.html": {
+        "errors": [],
+        "scriptOrder": [
+          "./assets/js/site.js",
+          "./assets/data/people-data.js",
+          "./assets/js/people-content.js"
+        ],
+        "navLinks": 7,
+        "groups": 5,
+        "blocks": 12
+      },
+      "Photos.html": {
+        "errors": [],
+        "scriptOrder": [
+          "./assets/js/site.js",
+          "./assets/data/photos-data.js",
+          "./assets/js/photos-content.js",
+          "./assets/js/photos.js"
+        ],
+        "navLinks": 7,
+        "items": 18
+      },
+      "Opening.html": {
+        "errors": [],
+        "scriptOrder": [
+          "./assets/js/site.js",
+          "./assets/data/openings-data.js",
+          "./assets/js/openings-content.js"
+        ],
+        "navLinks": 7,
+        "sections": 7
+      }
+    },
+    "contentFidelity": {
+      "home_highlights": true,
+      "home_news": true,
+      "news": true,
+      "research": true,
+      "people": true,
+      "photos": true,
+      "openings": true
+    },
+    "interactions": {
+      "homeSlider": true,
+      "publicationsSearch": true,
+      "photosLightbox": true
+    }
+  }
+}

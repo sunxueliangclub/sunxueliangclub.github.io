@@ -1,0 +1,53 @@
+ZHOU GROUP — 内容维护指南
+========================
+
+建议以后只改 assets/data/ 下的数据文件，不直接改页面骨架。
+
+Home Highlights
+  assets/data/home-highlights-data.js
+  当前 5 条。
+
+Home News
+  assets/data/home-news-data.js
+  当前 58 条。
+  与完整 News 页分开保存，因为原站首页摘要文案和 News 完整文案并不完全一致。
+
+News
+  assets/data/news-data.js
+  当前 65 条 / 4 个年份分组。
+
+Research
+  assets/data/research-data.js
+  当前 3 个研究方向。
+
+Publications
+  assets/data/publications-data.js
+  当前 68 篇。
+
+People
+  assets/data/people-data.js
+  当前 5 个分类 / 12 个排版块。
+  为保持 1:1 排版，人员行使用 blocksHtml；新增成员可复制相邻 Leaderphoto 块修改。
+
+Photos
+  assets/data/photos-data.js
+  当前 18 张 / 3 类。
+  新图片放 assets/photos/，再新增数据项。
+
+Opening
+  assets/data/openings-data.js
+  当前 7 个招聘内容区块。
+  为保持复杂中文招聘排版，每个区块保留完整 section HTML。
+
+页面 HTML 现在主要保留导航、容器、页脚；CSS 与渲染 JS 一般不需要日常修改。
+数据继续使用 .js 而不是 fetch(JSON)，以保持纯静态/本地打开兼容性。
+
+最终验证
+--------
+- 拆分前后内容文字一致：是
+- 7 个页面 JS 页面错误：0
+- 本地 HTML/CSS/数据资源缺失：0
+- JS 语法错误：0
+- Home 轮播：通过
+- Publications 搜索：通过
+- Photos 灯箱：通过
