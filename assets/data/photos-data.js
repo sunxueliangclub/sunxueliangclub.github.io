@@ -48,18 +48,18 @@ window.ZHOU_PHOTO_SECTIONS = [
  
     ]
   },
-  {
-    "id": "vigor",
-    "title": "Vigor",
-    "note": "Sports, Outdoors",
-    "cards": [
-      {
-        "category": "vigor",
-        "image": "./assets/photos/20250817a.jpg",
-        "alt": "Vigor photo",
-        "loading": "lazy",
-        "captionHtml": ""
-      }
-    ]
-  }
+  // {
+  //   "id": "vigor",
+  //   "title": "Vigor",
+  //   "note": "Sports, Outdoors",
+  //   "cards": [
+  //     {
+  //       "category": "vigor",
+  //       "image": "./assets/photos/20250817a.jpg",
+  //       "alt": "Vigor photo",
+  //       "loading": "lazy",
+  //       "captionHtml": ""
+  //     }
+  //   ]
+  // }
 ];
