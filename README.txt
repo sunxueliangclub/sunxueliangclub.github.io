@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Sunxueliang Group static site replica
 ================================
 
@@ -13,3 +14,7 @@ Independent pages:
   Photos.html
   Opening.html
 
+=======
+
+add 
+>>>>>>> master
