@@ -87,7 +87,7 @@ window.ZHOU_PUBLICATIONS = [
   },
   {
     "year": 2026,
-    "title": "Li$_\\textrm2$ CO$_\\textrm3$ -derived low-cost Li$_\\textrm2$ S for sulfide solid electrolytes exceeding 11 mS cm$^\\textrm-1$",
+    "title": "Li2CO3 -derived low-cost Li2S for sulfide solid electrolytes exceeding 11 mS cm-1",
     "authors": "Mengfei Zhu, Shengjie Xia, Chao Wang, Haoxiong Hu, Ziqing Wang, Luting Xie, Kaiyong Tuo, Zhimin Zhou, Mingfeng Wei, Tingting Liu, Suzhe Liang, Guantai Hu, Shutao Zhang, Jian Hong, Xueliang Sun, Changhong Wang",
     "venue": "Angewandte Chemie International Edition",
     "paperUrl": "https://onlinelibrary.wiley.com/doi/10.1002/anie.8115835",
@@ -171,16 +171,6 @@ window.ZHOU_PUBLICATIONS = [
     "authors": "Junwu Sang, Changhong Wang, Wenchuang Yuan, Shanshan Jiang, Shaoke Guo, Xing Cheng, Minghui Li, Zhen Shi, Yan-Bing He, Xueliang Sun, Zhen Zhou",
     "venue": "Nature Communications",
     "paperUrl": "https://www.nature.com/articles/s41467-026-73012-4",
-    "pdfUrl": "",
-    "badges": [],
-    "links": []
-  },
-  {
-    "year": 2026,
-    "title": "Li$_\\textrm2$ CO$_\\textrm3$ ‐Derived Low‐Cost Li$_\\textrm2$ S for Sulfide Solid Electrolytes Exceeding 11 mS cm$^\\textrm−1$",
-    "authors": "Mengfei Zhu, Shengjie Xia, Chao Wang, Haoxiong Hu, Ziqing Wang, Luting Xie, Kaiyong Tuo, Zhimin Zhou, Mingfeng Wei, Tingting Liu, Suzhe Liang, Guantai Hu, Shutao Zhang, Jian Hong, Xueliang Sun, Changhong Wang",
-    "venue": "Angewandte Chemie International Edition",
-    "paperUrl": "https://onlinelibrary.wiley.com/doi/10.1002/anie.8115835",
     "pdfUrl": "",
     "badges": [],
     "links": []

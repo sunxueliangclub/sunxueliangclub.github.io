@@ -108,22 +108,12 @@
 
   // 2) 其他成员：黑色中等字重（你把名单补全）
   const OTHER_NAMES = [
-    "Xiang Ji", "X Ji", "X. Ji",
-    "Xianzhang Chen", "XZ Cheng", "X Cheng" , "X. Cheng",
-    "Chenghao Shen", "CH Shen", "C Shen" , "C. Cheng",
-    "Richang Huang", "RC Huang", "R Huang" , "R. Huang",
-     "Ziye Zhu", "ZY Zhu", "Z Zhu" , "Z. Zhu",
-    "Zhou Cui", "Z Cui", "Z. Cui",
-    "Kang Yang", "K Yang", "K. Yang",
-    "Yongliang Hu", "H Hu", "Y. Hu",
-    "Xunkai Duan", "X Duan", "X. Duan",
-    "Jiahui Qian", "J Qian", "J. Qian",
-    "Shuang Li", "S Li", "S. Li",
-    "Xiyu Chen", "X Chen", "X. Chen",
-     "Linxuan Ji", "L Ji", "L. Ji",
-    "Wei Tu", "Wei Tu", "Wei. Tu",
-    "Bowen Hao", "B Hao", "B. Hao",
-     "Jiayong Zhang", "J Zhang", "J. Zhang",
+    
+     "Changtai Zhao",
+     "Shuo Wang", "Yifei Mo", "Wei Xia",
+    "Jian Peng", "Weihan Li", "Jiamin Fu",
+    "Bowen Hao", "Yipeng Sun", "Changhong Wang",
+     "Jianwen Liang", "Xiaona Li", "Xueliang Sun",
     // ...继续加
   ];
 
@@ -160,23 +150,11 @@
   let safeStr = escapeHTML(authorsString);
 
   const names = [
-    "Xianzhang Chen", "XZ Cheng", "X Cheng" , "X. Cheng",
-    "Chenghao Shen", "CH Shen", "C Shen" , "C. Cheng",
-    "Richang Huang ", "RC Huang", "R Huang" , "R. Huang",
-    "Ziye Zhu ", "ZY Zhu", "Z Zhu" , "Z. Zhu",
-    "Zhou Cui ", "Z Cui", "Z. Cui",
-    "Kang Yang", "K Yang", "K. Yang",
-    "Yongliang Hu", "H Hu", "Y. Hu",
-    "Xunkai Duan", "X Duan", "X. Duan",
-    "Jiahui Qian", "J Qian", "J. Qian",
-    "Shuang Li", "S Li", "S. Li",
-    "Xiyu Chen", "X Chen", "X. Chen",
-     "Linxuan Ji", "L Ji", "L. Ji",
-    "Xiang Ji", "X Ji", "X. Ji",
-    "Wei Tu", "Wei Tu", "Wei. Tu",
-    "Bowen Hao", "B Hao", "B. Hao",
-     "Jiayong Zhang", "J Zhang", "J. Zhang",
-    "Tong Zhou", "T Zhou", "T. Zhou",
+    "Changtai Zhao",
+     "Shuo Wang", "Yifei Mo", "Wei Xia",
+    "Jian Peng", "Weihan Li", "Jiamin Fu",
+    "Bowen Hao", "Yipeng Sun", "Changhong Wang",
+     "Jianwen Liang", "Xiaona Li", "Xueliang Sun",
     // ...把课题组所有人加这里
   ];
 
