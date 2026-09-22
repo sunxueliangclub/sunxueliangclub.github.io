@@ -13,7 +13,7 @@ window.ZHOU_PEOPLE_GROUPS = [
             <a href=\"https://www.imei-eit.com/pi/160.html\">\n \
             <div class=\"Leaderp1\"><img alt=\"\" height=\"280px\" src=\"./assets/people/xueliangsun.png\"/>\
             </div>\n</a>\n<div class=\"Leaderp2\">\n<peoplespan1>\
-            <a class=\"link\" href=\"https://www.imei-eit.com/pi/160.html\">xueliang Sun 孙学良</a></peoplespan1>\n<br/>\n \
+            <a class=\"link\" href=\"https://www.imei-eit.com/pi/160.html\">孙学良 (xueliang Sun)</a></peoplespan1>\n<br/>\n \
             \t\t\t\t讲席教授<br/> \
             \n\t\t\t\t2023.09-至今：宁波东方理工大学（暂名），讲席教授<br/>\
             \n\t\t\t\t2023.01-2023.09：加拿大西安大略大学，杰出教授(Distinguished University Professor)<br/>\
@@ -81,6 +81,15 @@ window.ZHOU_PEOPLE_GROUPS = [
       联系电话：15840478226 <br/>\
       联系邮箱：hongguanli@eitech.edu.cn \n\t\t\t</div>\
       \
+      </div>",
+      "<div class=\"Leaderphoto\">\n<div class=\"postdoctor1\">\
+      <img alt=\"\" height=\"180px\" src=\"./assets/people/Postdoctor/guyang.jpg\"/></div>\n\
+      <div class=\"postdoctor2\">\n<peoplespan2>顾洋 (gu yang)</peoplespan2><br/>\
+      博士后 <br/>\
+      联系电话： <br/>\
+      联系邮箱：yanggu@eitech.edu.cn </div>\
+      \
+       \
       </div>",
     ]
   },
