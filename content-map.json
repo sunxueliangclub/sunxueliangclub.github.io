@@ -1,0 +1,45 @@
+{
+  "Home Highlights": {
+    "data": "assets/data/home-highlights-data.js",
+    "renderer": "assets/js/home-content.js",
+    "records": 5
+  },
+  "Home News": {
+    "data": "assets/data/home-news-data.js",
+    "renderer": "assets/js/home-content.js",
+    "records": 58
+  },
+  "News archive": {
+    "data": "assets/data/news-data.js",
+    "renderer": "assets/js/news-content.js",
+    "records": 65,
+    "yearGroups": 4
+  },
+  "Research topics": {
+    "data": "assets/data/research-data.js",
+    "renderer": "assets/js/research-content.js",
+    "records": 3
+  },
+  "Publications": {
+    "data": "assets/data/publications-data.js",
+    "renderer": "assets/js/publications.js",
+    "records": 68
+  },
+  "People roster": {
+    "data": "assets/data/people-data.js",
+    "renderer": "assets/js/people-content.js",
+    "groups": 5,
+    "blocks": 12
+  },
+  "Photos gallery": {
+    "data": "assets/data/photos-data.js",
+    "renderer": "assets/js/photos-content.js + assets/js/photos.js",
+    "records": 18,
+    "groups": 3
+  },
+  "Open positions": {
+    "data": "assets/data/openings-data.js",
+    "renderer": "assets/js/openings-content.js",
+    "blocks": 7
+  }
+}

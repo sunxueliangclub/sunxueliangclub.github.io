@@ -1,0 +1,58 @@
+{
+  "page_loads": {
+    "Home.html": {
+      "title": "Welcome to Prof. Tong Zhou's Research Group",
+      "page_errors": [],
+      "nav_links": 7
+    },
+    "News.html": {
+      "title": "News | Zhou Group",
+      "page_errors": [],
+      "nav_links": 7
+    },
+    "Research.html": {
+      "title": "Research | Prof. Tong Zhou's Research Group",
+      "page_errors": [],
+      "nav_links": 7
+    },
+    "Publications.html": {
+      "title": "Publications | Zhou Group",
+      "page_errors": [],
+      "nav_links": 7
+    },
+    "People.html": {
+      "title": "Welcome to Zhou Group",
+      "page_errors": [],
+      "nav_links": 7
+    },
+    "Photos.html": {
+      "title": "Photos | Zhou Group",
+      "page_errors": [],
+      "nav_links": 7
+    },
+    "Opening.html": {
+      "title": "Open Positions | Zhou Group",
+      "page_errors": [],
+      "nav_links": 7
+    }
+  },
+  "interactions": {
+    "home_slider": {
+      "active_before": 1,
+      "active_after_click": 1,
+      "ok": true
+    },
+    "publications_search": {
+      "rendered_items": 68,
+      "hidden_before": 0,
+      "shown_after_query": 1,
+      "ok": true
+    },
+    "photos_lightbox": {
+      "cards": 18,
+      "opened": true,
+      "closed": true,
+      "ok": true
+    }
+  }
+}

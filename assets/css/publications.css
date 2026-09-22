@@ -1,0 +1,251 @@
+/* Page-specific styles extracted from Publications.html. */
+/* =========================
+       Publications page (scoped)
+       ========================= */
+    .pub-page{
+      width: 1300px;
+      margin: 0 auto;
+      padding: 15px 0 60px;
+    }
+
+    .pub-page .pub-card{
+      background: var(--surface);
+      border: 1px solid rgba(0,0,0,0.05);
+      border-radius: 16px;
+      box-shadow: 0px 10px 30px rgba(0,0,0,0.05); /* 更柔和的高级阴影 */
+      padding: 30px 40px 20px;
+    }
+
+    /* ---- Customizable palette ---- */
+    .pub-page{
+      --pub-title-color: #111111; /* 标题更深更醒目 */
+      --pub-authors-color: #666666;
+      --pub-venue-color: var(--primary); /* 期刊使用主题酒红 */
+      --pub-meta-color: var(--muted);
+
+      --pub-year-color: var(--primary);
+      --pub-year-size: 20px;
+
+      --pub-badge-bg: rgba(253, 184, 55, 0.12);
+      --pub-badge-border: rgba(253, 184, 55, 0.55);
+      --pub-badge-text: var(--primary-600);
+    }
+
+    /* Top header row (title + search) */
+    .pub-page .pub-top{
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 6px 0 24px;
+      border-bottom: 2px solid rgba(0,0,0,0.04);
+      margin-bottom: 20px;
+    }
+
+    .pub-page .pub-top h1{
+      margin: 0 0 10px 0;
+      font-size: 26px;
+      letter-spacing: 0.2px;
+      color: var(--primary);
+    }
+
+    .pub-page .pub-tools{
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .pub-page .pub-search{
+      width: 360px;
+      max-width: 56vw;
+      padding: 12px 16px;
+      border-radius: 12px;
+      border: 1px solid rgba(0,0,0,0.1);
+      background: #f9f9f9;
+      color: var(--text);
+      outline: none;
+      transition: all 0.3s ease;
+    }
+    .pub-page .pub-search:focus{
+      background: #fff;
+      border-color: rgba(146, 7, 28, 0.3);
+      box-shadow: 0 0 0 3px rgba(146, 7, 28, 0.08);
+    }
+
+    /* Year sections */
+    .pub-page .pub-year-title{
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: var(--pub-year-size);
+      font-weight: 800;
+      color: var(--pub-year-color);
+      letter-spacing: 0.4px;
+      padding-bottom: 5px;
+      margin: 30px 0 10px;
+      border-bottom: 2px solid rgba(253,184,55,0.8);
+    }
+
+    /* Publication list */
+    .pub-page .pub-list{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* 核心升级 1：排版与悬停交互 */
+    .pub-page .pub-item{
+      display: grid;
+      grid-template-columns: 56px 1fr;
+      gap: 20px;
+      padding: 20px;
+      border-radius: 12px;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      border-bottom: 1px solid transparent; 
+      margin-bottom: 5px;
+    }
+    .pub-page .pub-item:hover{
+      background-color: rgba(146, 7, 28, 0.03); /* 微弱的酒红背景高亮 */
+      transform: translateX(6px); /* 丝滑向右平移 */
+      box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    }
+
+    /* 核心升级 2：左侧徽章序号 */
+    .pub-page .pub-no{
+      font-variant-numeric: tabular-nums;
+      background-color: #f0f0f0;
+      color: #888;
+      font-size: 14px;
+      line-height: 1;
+      text-align: center;
+      padding: 6px 0;
+      border-radius: 8px;
+      font-weight: 700;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: fit-content;
+      margin-top: 4px;
+    }
+    /* 悬停时徽章变色 */
+    .pub-page .pub-item:hover .pub-no{
+      background-color: var(--primary);
+      color: #ffffff;
+      box-shadow: 0 4px 10px rgba(146, 7, 28, 0.2);
+    }
+
+    /* 核心升级 3：字体层级 */
+    .pub-page .pub-title{
+      margin: 0;
+      font-size: 18px; /* 标题加大 */
+      line-height: 1.4;
+      font-weight: 700;
+      color: var(--pub-title-color);
+    }
+    .pub-page .pub-title-link{
+      color: var(--pub-title-color);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .pub-page .pub-title-link:hover{
+      color: var(--primary); /* 标题悬停变酒红 */
+    }
+
+    .pub-page .pub-authors{
+      margin-top: 8px;
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--pub-authors-color);
+    }
+
+    .pub-page .pub-venue{
+      margin-top: 6px;
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--pub-venue-color);
+      font-style: italic; /* 期刊斜体 */
+      font-weight: 600;   /* 期刊加粗 */
+    }
+    .pub-page .pub-venue a{
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .pub-page .pub-venue a:hover{
+      color: var(--primary-600);
+      text-decoration: underline;
+    }
+
+    .pub-page .pub-badges{
+      margin-top: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .pub-page .badge{
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--pub-badge-border);
+      background: var(--pub-badge-bg);
+      color: var(--pub-badge-text);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+      user-select: none;
+    }
+
+    /* 核心升级 5：现代胶囊按钮 */
+    .pub-page .chip{
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 5px 16px;
+      border-radius: 50px;
+      border: 1px solid rgba(146, 7, 28, 0.15);
+      background: #ffffff;
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      text-decoration: none;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+    }
+    /* 胶囊按钮悬停高级特效 */
+    .pub-page .chip:hover{
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(146, 7, 28, 0.2);
+    }
+    /* 自动加上跳转小箭头 */
+    .pub-page .chip::after {
+      content: '↗';
+      font-size: 12px;
+      font-weight: 900;
+      opacity: 0.8;
+      margin-left: 2px;
+      transition: transform 0.3s ease;
+    }
+    .pub-page .chip:hover::after {
+      transform: translate(2px, -2px); /* 箭头微动效果 */
+    }
+
+    /* Responsive */
+    @media (max-width: 1400px){
+      .pub-page{ width: min(1300px, 92vw); }
+    }
+    @media (max-width: 640px){
+      .pub-page .pub-card{ padding: 20px; }
+      .pub-page .pub-item{ grid-template-columns: 44px 1fr; padding: 15px 10px; gap: 15px;}
+      .pub-page .pub-search{ width: 100%; max-width: 100%; }
+      .pub-page .pub-tools{ width: 100%; }
+      .pub-page .pub-top{ align-items: stretch; flex-direction: column; }
+    }

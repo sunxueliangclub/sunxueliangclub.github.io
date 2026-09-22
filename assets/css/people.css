@@ -1,0 +1,57 @@
+/* Page-specific styles extracted from People.html. */
+.People1 {
+			height: 94px;
+			border-bottom-style: solid;
+			border-bottom-color: white;
+			border-width: 6px;
+			float: left;
+			margin-left: 40px;
+			text-align: center;
+			color: white;
+			font-size: 18px;
+			font-weight: bold;
+			line-height: 100px;
+			cursor: pointer;
+		}
+
+		peoplespan1 {
+			font-size: 32px;
+			font-weight: bold;
+			color: black;
+		}
+
+		peoplespan2 {
+			font-size: 24px;
+			font-weight: bold;
+			color: black;
+		}
+
+		.a1 {
+			text-decoration: none;
+		}
+
+		.a1:hover {
+			color: white;
+			background-color: #05386b;
+		}
+
+		.a2 {
+			text-decoration: none;
+			color: black;
+		}
+
+		.a2:hover {
+			color: black;
+			background-color: white;
+			text-decoration: underline;
+		}
+
+		.link {
+			text-decoration: none;
+			color: black;
+		}
+
+		.link:hover {
+			text-decoration: underline;
+			color: blue;
+		}

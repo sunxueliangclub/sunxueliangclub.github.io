@@ -1,0 +1,187 @@
+{
+  "pages": [
+    {
+      "page": "Home",
+      "html": "Home.html",
+      "assets": 20,
+      "asset_dir": "assets/home"
+    },
+    {
+      "page": "News",
+      "html": "News.html",
+      "assets": 3,
+      "asset_dir": "assets/news"
+    },
+    {
+      "page": "Research",
+      "html": "Research.html",
+      "assets": 7,
+      "asset_dir": "assets/research"
+    },
+    {
+      "page": "Publications",
+      "html": "Publications.html",
+      "assets": 3,
+      "asset_dir": "assets/publications"
+    },
+    {
+      "page": "People",
+      "html": "People.html",
+      "assets": 22,
+      "asset_dir": "assets/people"
+    },
+    {
+      "page": "Photos",
+      "html": "Photos.html",
+      "assets": 21,
+      "asset_dir": "assets/photos"
+    },
+    {
+      "page": "Opening",
+      "html": "Opening.html",
+      "assets": 3,
+      "asset_dir": "assets/opening"
+    }
+  ],
+  "local_reference_counts": {
+    "Home": 45,
+    "News": 19,
+    "Research": 23,
+    "Publications": 19,
+    "People": 38,
+    "Photos": 43,
+    "Opening": 25
+  },
+  "external_reference_counts": {
+    "Home": 7,
+    "News": 37,
+    "Research": 7,
+    "Publications": 119,
+    "People": 8,
+    "Photos": 2,
+    "Opening": 6
+  },
+  "missing_html_local_references": [
+    [
+      "Home",
+      "src",
+      "image/people/tzhou.jpg"
+    ]
+  ],
+  "missing_css_local_references": [
+    [
+      "assets/opening/style.css",
+      "../image/groupleader.jpg"
+    ],
+    [
+      "assets/home/style.css",
+      "../image/groupleader.jpg"
+    ],
+    [
+      "assets/photos/style.css",
+      "../image/groupleader.jpg"
+    ],
+    [
+      "assets/publications/style.css",
+      "../image/groupleader.jpg"
+    ],
+    [
+      "assets/news/style.css",
+      "../image/groupleader.jpg"
+    ],
+    [
+      "assets/research/style.css",
+      "../image/groupleader.jpg"
+    ],
+    [
+      "assets/people/style.css",
+      "../image/groupleader.jpg"
+    ]
+  ],
+  "missing_html_local_references_final": [],
+  "legacy_unused_css_missing_asset": {
+    "path": "image/groupleader.jpg",
+    "referenced_by": [
+      "assets/opening/style.css",
+      "assets/home/style.css",
+      "assets/photos/style.css",
+      "assets/publications/style.css",
+      "assets/news/style.css",
+      "assets/research/style.css",
+      "assets/people/style.css"
+    ],
+    "used_by_delivered_html_class_Leaderp1": [
+      "People.html"
+    ]
+  },
+  "final_validation": {
+    "missing_html_local_references": [],
+    "missing_css_local_references": [],
+    "nav_links_found_by_page": {
+      "Home.html": [
+        "Home.html",
+        "News.html",
+        "Opening.html",
+        "People.html",
+        "Photos.html",
+        "Publications.html",
+        "Research.html"
+      ],
+      "News.html": [
+        "Home.html",
+        "News.html",
+        "Opening.html",
+        "People.html",
+        "Photos.html",
+        "Publications.html",
+        "Research.html"
+      ],
+      "Research.html": [
+        "Home.html",
+        "News.html",
+        "Opening.html",
+        "People.html",
+        "Photos.html",
+        "Publications.html",
+        "Research.html"
+      ],
+      "Publications.html": [
+        "Home.html",
+        "News.html",
+        "Opening.html",
+        "People.html",
+        "Photos.html",
+        "Publications.html",
+        "Research.html"
+      ],
+      "People.html": [
+        "Home.html",
+        "News.html",
+        "Opening.html",
+        "People.html",
+        "Photos.html",
+        "Publications.html",
+        "Research.html"
+      ],
+      "Photos.html": [
+        "Home.html",
+        "News.html",
+        "Opening.html",
+        "People.html",
+        "Photos.html",
+        "Publications.html",
+        "Research.html"
+      ],
+      "Opening.html": [
+        "Home.html",
+        "News.html",
+        "Opening.html",
+        "People.html",
+        "Photos.html",
+        "Publications.html",
+        "Research.html"
+      ]
+    },
+    "css_missing_asset_fallback": "assets/image/groupleader.jpg <- assets/people/tzhou.jpg"
+  }
+}

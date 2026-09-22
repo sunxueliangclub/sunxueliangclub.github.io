@@ -1,0 +1,122 @@
+/* Page-specific styles extracted from Research.html. */
+/* =========================
+       Research page: 现代左右交替排版
+       ========================= */
+    main.research-page {
+      width: 100%;
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 30px 20px 60px;
+      box-sizing: border-box;
+    }
+
+    .research-page .rp-wrap {
+      background: var(--surface);
+      border: 1px solid rgba(0,0,0,0.04);
+      border-radius: var(--radius);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* 同步首页的高级软阴影 */
+      padding: 50px;
+      box-sizing: border-box;
+    }
+
+    /* 页面总标题 */
+    .research-page h2 {
+      font-size: 28px;
+      color: var(--primary);
+      border-bottom: 3px solid var(--accent);
+      padding-bottom: 15px;
+      margin-top: 0;
+      margin-bottom: 40px;
+    }
+
+    /* --- 核心：左右图文交替布局 --- */
+    .topic-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 50px;
+      margin-bottom: 60px;
+    }
+    
+    /* 偶数行图片在左，文字在右 */
+    .topic-row.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .topic-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .topic-image {
+      flex: 1;
+      min-width: 300px;
+      text-align: center;
+    }
+
+    .topic-text h3 {
+      font-size: 22px;
+      color: var(--text);
+      margin-top: 0;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .topic-text p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: var(--text);
+      margin-bottom: 20px;
+    }
+
+    /* 统一优化的图片样式 */
+    .topic-image img {
+      width: 100%;
+      max-width: 550px; /* 限制最大宽度，保持精致 */
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      object-fit: cover;
+      transition: transform 0.3s ease;
+      display: inline-block;
+    }
+    .topic-image img:hover {
+      transform: translateY(-4px); /* 悬浮轻微放大 */
+    }
+
+    /* 相关文献的精美引用框 */
+    .rp-related {
+      font-size: 14px !important;
+      line-height: 1.6 !important;
+      color: var(--muted) !important;
+      background-color: #fcfbf9;
+      padding: 15px;
+      border-left: 4px solid var(--accent);
+      border-radius: 0 8px 8px 0;
+      margin-top: 20px;
+    }
+
+    .rp-related a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .rp-related a:hover {
+      text-decoration: underline;
+    }
+
+    /* 分割线弱化 */
+    .research-page hr {
+      border: 0;
+      border-top: 1px solid rgba(0,0,0,0.06);
+      margin: 50px 0;
+    }
+
+    /* 手机端自适应 */
+    @media (max-width: 900px) {
+      .research-page .rp-wrap { padding: 30px 20px; }
+      .topic-row { gap: 30px; margin-bottom: 40px; }
+      /* 手机端强制全部变回图片在上、文字在下的自然堆叠 */
+      .topic-row, .topic-row.reverse { flex-direction: column; }
+      .topic-text h3 { font-size: 20px; }
+    }
