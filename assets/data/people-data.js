@@ -89,6 +89,12 @@ window.ZHOU_PEOPLE_GROUPS = [
       联系电话： <br/>\
       联系邮箱：yanggu@eitech.edu.cn </div>\
       \
+      <div class=\"postdoctor1\">\
+      <img alt=\"\" height=\"180px\" src=\"./assets/people/Postdoctor/tanganchun.jpg\"/></div>\n\
+      <div class=\"postdoctor2\">\n<peoplespan2>唐安春 (tang anchun)</peoplespan2><br/>\
+      博士后 <br/>\
+      联系电话：17812011838 <br/>\
+      联系邮箱：actang@eitech.edu.cn \n\t\t\t</div>\
        \
       </div>",
     ]
