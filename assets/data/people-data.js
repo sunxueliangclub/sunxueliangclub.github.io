@@ -97,6 +97,29 @@ window.ZHOU_PEOPLE_GROUPS = [
       联系邮箱：actang@eitech.edu.cn \n\t\t\t</div>\
        \
       </div>",
+      "<div class=\"Leaderphoto\">\n<div class=\"postdoctor1\">\
+      <img alt=\"\" height=\"180px\" src=\"./assets/people/Postdoctor/yangpeng.png\"/></div>\n\
+      <div class=\"postdoctor2\">\n<peoplespan2>杨鹏 (yang peng)</peoplespan2><br/>\
+      博士后 <br/>\
+      联系电话：18858281522 <br/>\
+      联系邮箱：pyang@eitech.edu.cn </div>\
+      \
+      <div class=\"postdoctor1\">\
+      <img alt=\"\" height=\"180px\" src=\"./assets/people/Postdoctor/wangtan.jpg\"/></div>\n\
+      <div class=\"postdoctor2\">\n<peoplespan2>王坦(wang tan)</peoplespan2><br/>\
+      博士后 <br/>\
+      联系电话：15641685876 <br/>\
+      联系邮箱：tanwang@eitech.edu.cn \n\t\t\t</div>\
+       \
+      </div>",
+      "<div class=\"Leaderphoto\">\n<div class=\"postdoctor1\">\
+      <img alt=\"\" height=\"180px\" src=\"./assets/people/Postdoctor/yangyang.jpg\"/></div>\n\
+      <div class=\"postdoctor2\">\n<peoplespan2>杨旸 (yang yang)</peoplespan2><br/>\
+      博士后 <br/>\
+      联系电话：15701058042 <br/>\
+      联系邮箱：hiy2020@163.com </div>\
+      \
+      </div>",
     ]
   },
   {
@@ -161,6 +184,36 @@ window.ZHOU_PEOPLE_GROUPS = [
       上海交通大学-26级联培 <br/>\
       联系电话：  <br/>\
       联系邮箱：hehao-hydro@sjtu.edu.cn </div>\
+      \
+      </div>",
+      "<div class=\"Leaderphoto\">\n<div class=\"postdoctor1\">\
+      <img alt=\"\" height=\"180px\" src=\"./assets/people/phd/liaoyujie.jpg\"/></div>\n\
+      <div class=\"postdoctor2\">\n<peoplespan2>廖俣杰 (liao yujie)</peoplespan2><br/>\
+      上海交通大学-25级联培 <br/>\
+      联系电话：18030951532 <br/>\
+      联系邮箱：1054154219@qq.com </div>\
+      \
+      <div class=\"postdoctor1\">\
+      <img alt=\"\" height=\"180px\" src=\"./assets/people/phd/wukaihang.jpg\"/> </div>\n<div class=\"postdoctor2\">\n\
+      <peoplespan2>吴凯杭 (wu kaihang)</peoplespan2><br/>\
+      中国科学技术大学-26级联培 <br/>\
+      联系电话：15860087648  <br/>\
+      联系邮箱：kwu@eitech.edu.cn </div>\
+      \
+      </div>",
+      "<div class=\"Leaderphoto\">\n<div class=\"postdoctor1\">\
+      <img alt=\"\" height=\"180px\" src=\"./assets/people/phd/hanxu.jpg\"/></div>\n\
+      <div class=\"postdoctor2\">\n<peoplespan2>韩旭 (han xu)</peoplespan2><br/>\
+      上海交通大学-25级联培 <br/>\
+      联系电话：19855012467 <br/>\
+      联系邮箱：xhan@eitech.edu.cn </div>\
+      \
+      <div class=\"postdoctor1\">\
+      <img alt=\"\" height=\"180px\" src=\"./assets/people/phd/zhangyuanhe.jpg\"/> </div>\n<div class=\"postdoctor2\">\n\
+      <peoplespan2>张原赫 (Zhang yuanhe)</peoplespan2><br/>\
+      中国科学技术大学-26级联培 <br/>\
+      联系电话：18570042794  <br/>\
+      联系邮箱：zhangycbyun@163.com </div>\
       \
       </div>",
     ]
