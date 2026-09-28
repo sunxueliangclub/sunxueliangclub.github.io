@@ -33,17 +33,17 @@ window.ZHOU_PHOTO_SECTIONS = [
     "cards": [
       {
         "category": "social",
-        "image": "./assets/photos/2025a2.jpg",
+        "image": "./assets/photos/quanyuanhezhao-chenxiao.jpg",
         "alt": "Social photo",
         "loading": "lazy",
-        "captionHtml": ""
+        "captionHtml": "物质与能源学院全员与陈十一校长等校领导合照"
       },
       {
         "category": "social",
-        "image": "./assets/photos/20260131_1.jpg",
+        "image": "./assets/photos/allpi.jpg",
         "alt": "Social photo",
         "loading": "lazy",
-        "captionHtml": ""
+        "captionHtml": "物质与能源学院全体PI合照"
       },
  
     ]
