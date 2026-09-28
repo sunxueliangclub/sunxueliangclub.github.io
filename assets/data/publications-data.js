@@ -32,7 +32,7 @@ window.ZHOU_PUBLICATIONS = [
     "venue": "Angewandte Chemie International Edition",
     "paperUrl": "https://onlinelibrary.wiley.com/doi/abs/10.1002/anie.202517806",
     "pdfUrl": "",
-    "badges": [],
+    "badges": ["封面文章"],
     "links": []
   },
   {
@@ -72,7 +72,7 @@ window.ZHOU_PUBLICATIONS = [
     "venue": "Journal of the American Chemical Society",
     "paperUrl": "https://doi.org/10.1021/jacs.5c23309",
     "pdfUrl": "",
-    "badges": [],
+    "badges": ["封面文章"],
     "links": []
   },
   {
