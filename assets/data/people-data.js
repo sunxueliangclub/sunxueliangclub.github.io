@@ -10,7 +10,7 @@ window.ZHOU_PEOPLE_GROUPS = [
     "headingClass": "Leadertop",
     "blocksHtml": [
       "<div class=\"Leaderphoto-top\">\n \
-            <a href=\"https://www.imei-eit.com/pi/160.html\">\n \
+            <a href=\"https://www.imei-eit.com/pi/160.html\" target=\"_blank\">\n \
             <div class=\"Leaderp1\"><img alt=\"\" height=\"280px\" src=\"./assets/people/xueliangsun.png\"/>\
             </div>\n</a>\n<div class=\"Leaderp2\">\n<peoplespan1>\
             <a class=\"link\" href=\"https://www.imei-eit.com/pi/160.html\">孙学良 (xueliang Sun)</a></peoplespan1>\n<br/>\n \
