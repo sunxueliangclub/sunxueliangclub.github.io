@@ -104,7 +104,7 @@
   let safeStr = escapeHTML(authorsString);
 
   // 1) PI（Tong Zhou）所有可能写法：更粗
-  const PI_NAMES = ["Tong Zhou", "T Zhou", "T. Zhou"];
+  const PI_NAMES = ["Xueliang Sun", "X Sun", "X. Sun"];
 
   // 2) 其他成员：黑色中等字重（你把名单补全）
   const OTHER_NAMES = [
