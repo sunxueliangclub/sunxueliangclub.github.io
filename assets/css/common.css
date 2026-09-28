@@ -167,6 +167,21 @@ a:hover { color: var(--primary-600); background-color: transparent; }
 	object-fit: cover;
 }
 
+.TopPhoto a {
+	margin: 0;
+    font-size: 18px;
+    color: var(--text);
+    line-height: 1.5;
+    font-weight: bold;
+
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+
 /* --- 高级半透明切换按钮 --- */
 .slider-btn {
 	position: absolute;
